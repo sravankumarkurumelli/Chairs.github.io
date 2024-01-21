@@ -16,7 +16,7 @@
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   font-family: sans-serif;
@@ -477,5 +477,8 @@ footer .about-company .container {
   height: 400px;
   margin-left: 20px;
   margin-bottom: 40px;
+}
+ul{
+  display: none;
 }
 }
