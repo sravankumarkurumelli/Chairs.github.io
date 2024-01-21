@@ -10,7 +10,9 @@
   --main-color: #e3e8e4;
   --primary-color: #363636;
   --main-font: "Playfair Display SC", serif;
+  
 }
+
 
 nav {
   display: flex;
@@ -56,11 +58,12 @@ ul li a:hover {
 
 /* header */
 header {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .content-container {
@@ -124,7 +127,7 @@ header {
 /* PRODUCTS */
 .products-heading {
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   font-size: 4rem;
   color: #0000004f;
@@ -210,7 +213,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .why-us .img-layer {
@@ -277,7 +280,7 @@ header {
 
 /* Features */
 .features {
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -319,7 +322,8 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: auto;
+  padding: 1rem 0;
   color: #fff;
 }
 
@@ -368,7 +372,7 @@ footer .about-company .container {
 
 @media only screen and (max-width: 900px) {
   header {
-    height: 120vh;
+    height: 50vh;
     text-align: center;
     justify-content: center;
   }
@@ -380,13 +384,16 @@ footer .about-company .container {
   }
 
   .popularity {
-    margin-top: 22rem;
+    margin-top: 32rem;
     text-align: center;
   }
 
   .d-none {
     display: none;
-  }
+  }.content-container {
+    margin-top: 6rem;
+}
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -394,6 +401,12 @@ footer .about-company .container {
     width: 350px;
   }
 
+  .cards {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  
+}
   .img-container {
     width: 350px;
     height: 350px;
@@ -420,10 +433,49 @@ footer .about-company .container {
   }
 
   .cards {
-    margin-right: 5rem;
+    margin-right: 0rem;
   }
-
+  .content-container {
+    margin-top: 6rem;
+}
   .card-fill {
     margin-left: 10px;
   }
+
+  .why-us .img-layer {
+    width: 300px;
+    height: 300px;
+    background: var(--main-color);
+    border-radius: 100%;
+}
+.why-us .img-layer .img {
+  width: 300px;
+  height: 300px;
+ 
+}
+.primary-headings {
+  width: 300px;
+}
+.main-headings {
+  font-size:2rem;
+  text-align: center;
+}
+.content-container {
+  margin-left: 0rem;
+}
+.card {
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 40px;
+  
+  border-radius: 5px;
+}
+.img-container img {
+  width: 280px;
+  height: 400px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
 }
